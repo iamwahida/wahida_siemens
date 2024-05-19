@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        String  str = "";
+        String  str = "";                           //man könnte auch evt. Stringbuilder verwenden
 
         System.out.println("Bitte schreiben Sie einen Satz: ");
 
@@ -14,7 +14,7 @@ public class Main {
             if(!str.isEmpty()){                                     // str != "" würde auch funktionieren
                 String reverse_str = "";
                 for (int i = str.length() - 1; i >= 0; i--) {
-                    reverse_str += str.charAt(i);                  //man könnte auch evt. Stringbuilder verwenden
+                    reverse_str += str.charAt(i);
                 }
                 System.out.println(reverse_str);
                 break;
